@@ -1,0 +1,286 @@
+*{
+font-family: 'Jura', sans-serif;
+}
+
+h1, h2{
+	text-align: center;
+	margin-top: 50px;
+	text-shadow:     text-shadow: -1px 0 darkseagreen, 0 1px darkseagreen, 1px 0 darkseagreen, 0 -1px darkseagreen;
+}
+.container{
+	
+	margin-top: 100px ;
+	background-repeat: no-repeat;
+}
+.container h1{
+	font-size: 50px;
+}
+#quartier{
+	border:solid;
+	border-width: thin;
+}
+.a{
+    margin: 5px
+}
+
+body{
+
+background-color: white;
+
+}
+a{
+	text-decoration: none;
+}
+.explication {
+	text-align: center;
+}
+
+.topnav{
+	overflow: hidden;
+	background-color: white;
+	margin-top: 0px;
+	padding: 10px;
+	position: fixed;
+  	top: 0;
+  	width: 99%;
+  	z-index: 99999;
+}
+.right{
+	margin-right: 15px;
+	float: right;
+	padding: 15px;
+}
+
+::placeholder{
+	color: black;
+	font-size: 15px;
+	text-align: center;
+}
+.connexion{
+	background-color: darkseagreen;
+	color: white;
+}
+.connexion:hover{
+	background-color: green;
+}
+.inscription{
+	background-color: white;
+	color: darkseagreen;
+	border-style: solid;
+	border-width: 1px;
+}
+.inscription:hover{
+	background-color: whitesmoke;
+}
+ul {
+  list-style-type: none;
+}
+.livraison{
+	margin: 30px;
+	margin-bottom: 30px;
+	background-color: rgba(255,255,255,0.3);
+	padding: 30px;
+	width: 700px;
+}
+.liv{
+    align-self: center;
+    padding: 15px;
+}
+.heure{
+    width: 200px;
+    font-size: 15px;
+}
+.adress{
+    width: 300px;
+    font-size: 15px;
+}
+.restopop{
+	width: 100%;
+	padding: 30px;
+}
+div.gallery {
+    border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 5px ;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.image{
+	position: relative;
+    
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+}
+.resto{
+	float: left;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 15px;
+    align-self: center;
+    width:  30%;
+}
+.resto:hover{
+	background-color: whitesmoke;	
+}
+.description{
+	padding: 15px;
+	border:solid;
+	border-width: thin;
+	border-top: : 0px;
+}
+.description:hover{
+	
+}
+.minimum{
+	float: right;
+}
+.price{
+	float: right;
+}
+.p{
+	float: left;
+	padding: 15px;
+	width: 25%;
+	background-color: whitesmoke;
+}
+.plus, .moins{
+	text-decoration: underline;
+}
+.restaurant{
+}
+.carte{
+	position: relative;
+	width: 300px;
+	margin: 50px;
+	padding: 20px;
+	background-color: white;
+}
+.infoCarteTitle{
+	color: green;
+	font-size: 20px;
+}
+.delai{
+	padding: 5px;
+	color: white;
+	background-color: green;
+}
+.olympien{
+    background-image: url(olympien2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%, 100%;
+
+	padding: 10px;
+}
+.options{
+	padding: 20px;
+}
+.option{
+	padding-right: 105px;
+	border-bottom: solid;
+	border-bottom-color: green;
+
+}
+.option:hover{
+	background-color: whitesmoke;
+}
+.center{
+align-content: center;
+}
+.index{
+	width: 20%;
+	float: left;
+}
+.categorie{
+	padding: 5px;
+}
+.menu{
+	overflow: hidden;
+	width: 600px;
+	margin-left: 270px;
+}
+.produit{
+	float: left;
+	width: 50%
+}
+.caisse{
+	overflow: hidden;
+	width: 40%;
+}
+.size{
+	padding: 15px;
+	padding-bottom: 25px;
+	
+}
+.b{
+	border-bottom-style: solid;
+	border-bottom-width:thin;
+}
+.name{
+	font-size: 20px
+}
+.taille{
+	float: left;
+}
+i{
+	float: right;
+	border-radius: 3px;
+	padding: 2px;
+	color: darkseagreen;
+	font-size: 30px;
+}
+.item{
+	border-bottom-style: solid;
+	border-bottom-width:thin;
+	width: 600px;
+	margin: 15px;
+}
+.produit{
+	width: 50%;
+}
+.commande{
+	margin: 5px;
+}
+.prix{
+	float: right;
+	margin-left: 50px;
+}
