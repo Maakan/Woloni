@@ -12,7 +12,7 @@
 		<div class="topnav" >
 	        <input type="text" name="heure" class="liv heure" placeholder="AUX PLUS VITE">  
 	        <label class="a"> à </label>
-	        <input type="text" name="livraison" class="liv adress" list="quartier" placeholder="Saisissez votre adresse de livraison">
+	        <input type="text" name="livraison" class="liv adress" list="quartier" placeholder="Saisissez votre adresse de livraison" ng-change="tempsLivraison(valeur)" ng-model="valeur">
 	        <datalist id="quartier">
 	          <option ng-repeat="quartier in quartiers" value="{{ quartier }}"></option>
 	        </datalist>
@@ -37,10 +37,7 @@
 		    <div  class="p">4.Vous êtes livré chez vous, dégustez votre repas !</div>
   		</div>  
           <br>
-          <br>
-          <br>
-		<div>
-			<div class="resto" ng-repeat="restau in restaurants">
+			<div class="resto" ng-repeat="restau in restaurants | orderBy : 'time'">
 	    	<a href="">
 	    		<div class="image"  ng-style="{'background-image': 'url(' + restau.url + ')'}"></div>
 	    		<div class="description">
