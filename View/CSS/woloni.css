@@ -267,6 +267,9 @@ i{
 	color: darkseagreen;
 	font-size: 30px;
 }
+i:hover{
+	background-color: black;
+}
 .item{
 	border-bottom-style: solid;
 	border-bottom-width:thin;

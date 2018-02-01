@@ -9,14 +9,26 @@
   	<script src="../JS/woloni.js"></script>
 </head>
 <body ng-app="myApp" ng-controller="namesCtrl">
-	<div ng-include ="'topNavBar.html'"></div>
+	<header>
+		<!-- Bar de navigation -->
+		<div class="topnav" >
+	        <input type="text" name="heure" class="liv heure" placeholder="AUX PLUS VITE">  
+	        <label class="a"> à </label>
+	        <input type="text" name="livraison" class="liv adress" list="quartier" placeholder="Saisissez votre adresse de livraison">
+	        <datalist id="quartier">
+	          <option ng-repeat="quartier in quartiers" value="{{ quartier }}"></option>
+	        </datalist>
+			<a href="#inscription" class="right inscription">Inscription</a>
+			<a href="#connexion" class="right connexion">Connexion</a>
+		</div>
+	</header>
 	<div class="container olympien">
 		<div class="carte">
 			<p class="infoCarteTitle"><strong> L'olympien - Quartier du fleuve</strong></p>
 			<p class="infoCarteTitle">€€ · Italien · Pizza</p>
 			<p class="infoCarte">Minimum : 5000Fcfa</p>
 			<p class="infoCarte">Livraison 1500Fcfa</p>
-			<p class="delai">20-30min</p>
+			<p class="delai"></p>
 		</div>
 	</div>
 	<div class="options">
@@ -26,17 +38,17 @@
 			<a href="" class="option">Infos</a> 
 		</strong></center>
 	</div>
-<div class="commande">
-	<div class="index">
-		<ul class="menuIndex">
-			<li class="categorie">Produits populaire</li>
-			<li class="categorie">Pizza base tomate</li>
-			<li class="categorie">Pizza base crême fraiche</li>
-			<li class="categorie">Plats</li>
-			<li class="categorie">Dessert</li>
-			<li class="categorie">Boissons</li>
-		</ul>
-	</div>
+	<div class="commande">
+		<div class="index">
+			<ul class="menuIndex">
+				<li class="categorie">Produits populaire</li>
+				<li class="categorie">Pizza base tomate</li>
+				<li class="categorie">Pizza base crême fraiche</li>
+				<li class="categorie">Plats</li>
+				<li class="categorie">Dessert</li>
+				<li class="categorie">Boissons</li>
+			</ul>
+		</div>
 	<div class="menu">
 		<h3>Produits populaire</h3>
 		<div class="item">

@@ -4,11 +4,15 @@
 	<link rel="stylesheet" type="text/css" href="../CSS/woloni.css">
 	<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 	<script src="../JS/woloni.js"></script>
 	<title>AngularJS</title>
 </head>
+
+
 <body ng-app="myApp" ng-controller="namesCtrl">
 	<header>
+		<!-- Bar de navigation -->
 		<div class="topnav" >
 	        <input type="text" name="heure" class="liv heure" placeholder="AUX PLUS VITE">  
 	        <label class="a"> à </label>
@@ -20,6 +24,8 @@
 			<a href="#connexion" class="right connexion">Connexion</a>
 		</div>
 	</header>
+
+<!--Explication fonctionnement  -->
 	<div class="container">
 		<div class="head">
 			<h1>Commander vos repas dans les meilleurs restaurant de Bamako en ligne!</h1>
@@ -28,7 +34,7 @@
 	</div>
 	<div class="restopop">
 		<div class="explication">Commandez facilement en 4 étapes pour être livré jusqu'à votre porte ! 
-			<div class="plus" ng-click ="info = ! info">En savoir plus ! </div>
+			<div class="plus" ng-click ="info = ! info"> <a href="">En savoir plus !</a> </div>
     	</div>
   		<div ng-show="info">
 		    <div  class="p">1.Selectionner votre restaurant</div>
@@ -37,8 +43,10 @@
 		    <div  class="p">4.Vous êtes livré chez vous, dégustez votre repas !</div>
   		</div>  
           <br>
+
+          <!-- Restaurants  -->
 			<div class="resto" ng-repeat="restau in restaurants | orderBy : 'time'">
-	    	<a href="">
+	    	<a ng-href="{{restau.lien}}">
 	    		<div class="image"  ng-style="{'background-image': 'url(' + restau.url + ')'}"></div>
 	    		<div class="description">
 	      			<div class="minimum">	{{restau.minimum + 'Fcfa'}}</div>
@@ -49,7 +57,6 @@
 	    	</a>
 	 		</div>
 		</div>
-<script src="namesController.js"></script>
 
 </body>
 </html>
